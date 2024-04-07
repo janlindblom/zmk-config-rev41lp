@@ -17,8 +17,8 @@
 #define ADJST   5
 
 #define S_SECT GRAVE // §
-#define S_PLUS MINS  // +
-#define S_ACUT EQL   // ´ (dead)
+#define S_PLUS MINUS // +
+#define S_ACUT EQUAL // ´ (dead)
 #define S_ARNG LBRC  // Å
 #define S_DIAE RBRC  // ¨ (dead)
 #define S_ODIA SEMI  // Ö
@@ -27,7 +27,6 @@
 #define S_LABK NUBS  // <
 #define S_MINS FSLH  // -
 
-#define S_HALF LS(S_SECT) // ½
 #define S_EXLM LS(N1)    // !
 #define S_DQUO LS(N2)    // "
 #define S_HASH LS(N3)    // #
@@ -43,9 +42,6 @@
 #define S_CIRC LS(S_DIAE) // ^ (dead)
 #define S_ASTR LS(S_QUOT) // *
 #define S_RABK LS(S_LABK) // >
-#define S_SCLN LS(COMMA) // ;
-#define S_COLN LS(DOT)  // :
-#define S_UNDS LS(S_MINS) // _
 
 #define S_AT   RA(N2)    // @
 #define S_PND  RA(N3)    // £
@@ -58,7 +54,6 @@
 #define S_BSLS RA(S_PLUS) // (backslash)
 #define S_TILD RA(S_DIAE) // ~ (dead)
 #define S_PIPE RA(S_LABK) // |
-#define S_MICR RA(M)    // µ
 
 / {
     behaviors {
@@ -108,10 +103,10 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     | ADJ | BKSP |    |     |
             bindings = <
-   &kp DEL &kp N1   &kp N2   &kp N3   &kp N4   &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans  &trans   &trans   &trans   &trans   &trans         &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
-   &trans  &trans   &kp LGUI &trans   &trans   &kp CLCK       &kp PSCRN &trans    &trans    &trans    &trans    &trans
-                                   &trans  &mo ADJST &kp BSPC &trans  &trans
+    &kp S_SECT  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp C_MUTE
+    &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
+    &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &kp PSCRN &trans    &trans    &trans    &trans    &trans
+                                   &trans  &mo ADJST &trans &trans  &trans
             >;
         };
 
