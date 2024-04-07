@@ -16,20 +16,49 @@
 #define FUNCT   4
 #define ADJST   5
 
-#define S_PLUS MINS // +
-#define S_ACUT EQL  // ´ (dead)
-#define S_ARNG LBRC // Å
-#define S_DIAE RBRC // ¨ (dead)
-#define S_ODIA SEMI // Ö
-#define S_ADIA SQT // Ä
-#define S_QUOT NUHS // '
-#define S_LABK NUBS // <
+#define S_SECT GRAVE // §
+#define S_PLUS MINS  // +
+#define S_ACUT EQL   // ´ (dead)
+#define S_ARNG LBRC  // Å
+#define S_DIAE RBRC  // ¨ (dead)
+#define S_ODIA SEMI  // Ö
+#define S_ADIA SQT   // Ä
+#define S_QUOT NUHS  // '
+#define S_LABK NUBS  // <
+#define S_MINS FSLH  // -
 
-#define S_EXCL LS(N1)
-#define S_AT   RA(N2)
-#define S_LCBR LS(N8)
-#define S_RCBR LS(N9)
-#define S_PIPE RA(S_LABK)
+#define S_HALF LS(S_SECT) // ½
+#define S_EXLM LS(N1)    // !
+#define S_DQUO LS(N2)    // "
+#define S_HASH LS(N3)    // #
+#define S_CURR LS(N4)    // ¤
+#define S_PERC LS(N5)    // %
+#define S_AMPR LS(N6)    // &
+#define S_SLSH LS(N7)    // /
+#define S_LPRN LS(N8)    // (
+#define S_RPRN LS(N9)    // )
+#define S_EQL  LS(N0)    // =
+#define S_QUES LS(S_PLUS) // ?
+#define S_GRV  LS(S_ACUT) // ` (dead)
+#define S_CIRC LS(S_DIAE) // ^ (dead)
+#define S_ASTR LS(S_QUOT) // *
+#define S_RABK LS(S_LABK) // >
+#define S_SCLN LS(COMMA) // ;
+#define S_COLN LS(DOT)  // :
+#define S_UNDS LS(S_MINS) // _
+
+#define S_AT   RA(N2)    // @
+#define S_PND  RA(N3)    // £
+#define S_DLR  RA(N4)    // $
+#define S_EURO RA(N5)    // €
+#define S_LCBR RA(N7)    // {
+#define S_LBRC RA(N8)    // [
+#define S_RBRC RA(N9)    // ]
+#define S_RCBR RA(N0)    // }
+#define S_BSLS RA(S_PLUS) // (backslash)
+#define S_TILD RA(S_DIAE) // ~ (dead)
+#define S_PIPE RA(S_LABK) // |
+#define S_MICR RA(M)    // µ
 
 / {
     behaviors {
@@ -65,14 +94,14 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp DEL &kp S_EXCL  &kp S_AT  &kp S_LCBR  &kp S_RCBR    &kp S_PIPE        &kp CARET &kp AMPS  &kp ASTRK   &kp LPAR  &kp RPAR  &kp DEL
-    &trans  &trans   &trans   &trans   &trans   &trans         &kp TILDE &kp UNDER &kp KP_PLUS &kp LBRC  &kp RBRC  &kp PIPE
+    &kp DEL &kp S_EXCL  &kp S_AT  &kp S_LCBR  &kp S_RCBR    &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES   &kp S_SECT  &kp S_CURR  &kp S_DIAE
+    &trans  &kp S_HASH   &kp S_DLR   &kp S_LPRN   &kp S_RPRN   &kp S_GRV         &kp TILDE &kp UNDER &kp KP_PLUS &kp LBRC  &kp RBRC  &kp PIPE
     &trans  &trans   &kp LGUI &trans   &trans   &kp CLCK       &kp PSCRN &trans    &trans      &trans    &trans    &trans
                                    &trans    &trans    &kp RET    &mo ADJST    &trans
             >;
         };
 
-        raise_layer {
+        raiS_layer {
 // -----------------------------------------------------------------------------
 // | DEL |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // |     |     |     |     |     |     |   |  `  |  -  |  =  |  [  |  ]  |  \  |
