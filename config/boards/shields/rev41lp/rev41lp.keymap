@@ -94,7 +94,7 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp DEL &kp S_EXCL  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
+    &kp DEL &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
     &trans  &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV       &kp S_PLUS  &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
     &trans  &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD      &kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp S_ACUT
                                                 &trans    &trans    &trans  &mo ADJST   &trans
