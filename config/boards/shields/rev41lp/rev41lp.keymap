@@ -80,10 +80,10 @@
 // | SHFT |CTL(Z)|ALT(X)|SFT(C)|CTL(V)|  B  |   |  N  |CTL(M)|SFT(,)|ALT(.)|  -  |  '  |
 //                         | LGUI | LWR |  SPACE  | RSE | FUNC |
             bindings = <
-    &lt RAISE ESC    &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I       &kp O   &kp P       &kp LBRC
-    &mt LCTRL BSPC   &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K       &kp L   &kp SEMI    &mt RCTRL SQT
-    &td0             &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp COMMA   &kp DOT &kp FSLH    &mt RSHIFT NUHS
-    &mt LALT DEL    &lt LOWER RET   &mt LGUI SPACE  &lt RAISE RET   &mt RALT TAB
+    &lt RAISE ESC   &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I       &kp O   &kp P      &kp S_ARNG
+    &mt LCTRL BSPC  &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K       &kp L   &kp S_ODIA &mt RCTRL S_ADIA
+    &td0            &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp COMMA   &kp DOT &kp S_MINS &mt RSHIFT S_QUOT
+                    &mt LALT DEL    &lt LOWER RET   &mt LGUI SPACE  &lt RAISE RET   &mt RALT TAB
             >;
         };
 
@@ -94,14 +94,14 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp DEL &kp S_EXCL  &kp S_AT  &kp S_LCBR  &kp S_RCBR    &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES   &kp S_SECT  &kp S_CURR  &kp S_DIAE
-    &trans  &kp S_HASH   &kp S_DLR   &kp S_LPRN   &kp S_RPRN   &kp S_GRV         &kp TILDE &kp UNDER &kp KP_PLUS &kp LBRC  &kp RBRC  &kp PIPE
-    &trans  &trans   &kp LGUI &trans   &trans   &kp CLCK       &kp PSCRN &trans    &trans      &trans    &trans    &trans
-                                   &trans    &trans    &kp RET    &mo ADJST    &trans
+    &kp DEL &kp S_EXCL  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
+    &trans  &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV       &kp S_PLUS  &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
+    &trans  &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD      &kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp S_ACUT
+                                                &trans    &trans    &trans  &mo ADJST   &trans
             >;
         };
 
-        raiS_layer {
+        raise_layer {
 // -----------------------------------------------------------------------------
 // | DEL |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // |     |     |     |     |     |     |   |  `  |  -  |  =  |  [  |  ]  |  \  |
