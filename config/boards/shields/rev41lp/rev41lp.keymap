@@ -18,14 +18,11 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
         };
     };
 
@@ -39,10 +36,10 @@
 // | SHFT |CTL(Z)|ALT(X)|SFT(C)|CTL(V)|  B  |   |  N  |CTL(M)|SFT(,)|ALT(.)|  /  |RETURN|
 //                         | LGUI | LWR |  SPACE  | RSE | FUNC |
             bindings = <
-   &kp TAB   &kp Q       &kp W      &kp E       &kp R       &kp T   &kp Y &kp U        &kp I           &kp O        &kp P    &kp BSPC
-   &kp ESC   &kp A       &kp S      &kp D       &kp F       &kp G   &kp H &kp J        &kp K           &kp L        &kp SEMI &kp SQT
-   &kp LSHFT &hm LCTRL Z &hm LALT X &hm LSHFT C &hm LCTRL V &kp B   &kp N &hm RCTRL M  &hm RSHFT COMMA &hm RALT DOT &kp FSLH &kp RET
-                        &kp LGUI  &mo LOWER &lt NAVIG SPACE &mo RAISE  &mo FUNCT
+   &lt RAISE ESC  &kp Q   &kp W      &kp E       &kp R       &kp T   &kp Y &kp U        &kp I           &kp O        &kp P    &kp BSPC
+   &mt LCTRL BSPC &kp A   &kp S      &kp D       &kp F       &kp G   &kp H &kp J        &kp K           &kp L        &kp SEMI &mt SQT
+   &td0           &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT SQT
+                                  &kp LGUI  &mo LOWER &lt NAVIG SPACE &mo RAISE &mo FUNCT
             >;
         };
 
