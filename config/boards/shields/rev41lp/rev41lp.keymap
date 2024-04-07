@@ -53,6 +53,9 @@
 #define S_TILD RA(S_DIAE) // ~ (dead)
 #define S_PIPE RA(S_LABK) // |
 
+#define WLEFT  LC(LEFT)
+#define WRIGHT LC(RIGHT)
+
 / {
     behaviors {
         td0: tap_dance_0 {
@@ -103,7 +106,7 @@
             bindings = <
     &kp S_SECT  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp C_MUTE
     &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp PG_UP   &kp C_VOL_UP
-    &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &trans      &trans      &kp HOME    &kp END     &kp PG_DN   &kp C_VOL_DN
+    &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &kp WLEFT   &kp WRIGHT  &kp HOME    &kp END     &kp PG_DN   &kp C_VOL_DN
                                     &trans  &mo ADJST &trans &trans  &trans
             >;
         };
