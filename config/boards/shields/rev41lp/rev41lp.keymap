@@ -12,9 +12,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define NAVIG   3
-#define FUNCT   4
-#define ADJST   5
+#define ADJST   3
 
 #define S_SECT GRAVE // §
 #define S_PLUS MINUS // +
@@ -27,30 +25,30 @@
 #define S_LABK NUBS  // <
 #define S_MINS FSLH  // -
 
-#define S_EXLM LS(N1)    // !
-#define S_DQUO LS(N2)    // "
-#define S_HASH LS(N3)    // #
-#define S_CURR LS(N4)    // ¤
-#define S_PERC LS(N5)    // %
-#define S_AMPR LS(N6)    // &
-#define S_SLSH LS(N7)    // /
-#define S_LPRN LS(N8)    // (
-#define S_RPRN LS(N9)    // )
-#define S_EQL  LS(N0)    // =
+#define S_EXLM LS(N1)     // !
+#define S_DQUO LS(N2)     // "
+#define S_HASH LS(N3)     // #
+#define S_CURR LS(N4)     // ¤
+#define S_PERC LS(N5)     // %
+#define S_AMPR LS(N6)     // &
+#define S_SLSH LS(N7)     // /
+#define S_LPRN LS(N8)     // (
+#define S_RPRN LS(N9)     // )
+#define S_EQL  LS(N0)     // =
 #define S_QUES LS(S_PLUS) // ?
 #define S_GRV  LS(S_ACUT) // ` (dead)
 #define S_CIRC LS(S_DIAE) // ^ (dead)
 #define S_ASTR LS(S_QUOT) // *
 #define S_RABK LS(S_LABK) // >
 
-#define S_AT   RA(N2)    // @
-#define S_PND  RA(N3)    // £
-#define S_DLR  RA(N4)    // $
-#define S_EURO RA(N5)    // €
-#define S_LCBR RA(N7)    // {
-#define S_LBRC RA(N8)    // [
-#define S_RBRC RA(N9)    // ]
-#define S_RCBR RA(N0)    // }
+#define S_AT   RA(N2)     // @
+#define S_PND  RA(N3)     // £
+#define S_DLR  RA(N4)     // $
+#define S_EURO RA(N5)     // €
+#define S_LCBR RA(N7)     // {
+#define S_LBRC RA(N8)     // [
+#define S_RBRC RA(N9)     // ]
+#define S_RCBR RA(N0)     // }
 #define S_BSLS RA(S_PLUS) // (backslash)
 #define S_TILD RA(S_DIAE) // ~ (dead)
 #define S_PIPE RA(S_LABK) // |
@@ -89,7 +87,7 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp DEL &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
+    &trans  &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
     &trans  &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV       &kp S_PLUS  &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
     &trans  &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD      &kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp S_ACUT
                                                 &trans    &trans    &trans  &mo ADJST   &trans
@@ -103,38 +101,10 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     | ADJ | BKSP |    |     |
             bindings = <
-    &kp S_SECT  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp C_MUTE
-    &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
-    &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &kp PSCRN &trans    &trans    &trans    &trans    &trans
-                                   &trans  &mo ADJST &trans &trans  &trans
-            >;
-        };
-
-        navig_layer {
-// -----------------------------------------------------------------------------
-// | DEL |     |     |     |     |     |   |     |     |     |     |     | DEL |
-// |     |     |     |     |     |     |   |     |LEFT |DOWN | UP  |RIGHT|     |
-// |     |     |     |     |     |CAPS |   |     |HOME |PG-DN|PG-UP| END |     |
-//                        |     |     |     |     |     |
-            bindings = <
-   &kp DEL &trans  &trans   &trans   &trans   &trans      &trans  &trans   &trans    &trans    &trans    &kp DEL
-   &trans  &trans  &trans   &trans   &trans   &trans      &trans  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
-   &trans  &trans  &trans   &trans   &trans   &kp CLCK    &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
-                                   &trans   &trans   &trans   &trans   &trans
-            >;
-        };
-
-        funct_layer {
-// -----------------------------------------------------------------------------
-// | DEL |     |     |     |     |     |   |     |     |     |     |     | DEL |
-// |     |     |     |     |     |     |   | F1  | F2  | F3  | F4  | F5  | F6  |
-// |     |     |     |     |     |  '  |   | F7  | F8  | F9  | F10 | F11 | F12 |
-//                        |     |     |     |     |     |
-            bindings = <
-   &kp DEL &trans  &trans   &trans   &trans   &trans      &trans    &trans    &trans    &trans    &trans    &kp DEL
-   &trans  &trans  &trans   &trans   &trans   &trans      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
-   &trans  &trans  &trans   &trans   &trans   &kp SQT     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-                                  &trans   &trans   &trans   &trans   &trans
+    &kp S_SECT  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp C_MUTE
+    &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp PG_UP   &kp C_VOL_UP
+    &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &trans      &trans      &kp HOME    &kp END     &kp PG_DN   &kp C_VOL_DN
+                                    &trans  &mo ADJST &trans &trans  &trans
             >;
         };
 
@@ -145,10 +115,10 @@
 // |     |     |     |     |     |     |   |RESET|     |     |     |     |      |
 //                        |     |     |     |     |     |
             bindings = <
-   &none   &none   &bl BL_DEC &bl BL_TOG &bl BL_INC &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-   &none   &none   &none   &none   &none   &none      &none        &none        &none        &none        &none        &none
-   &none   &none   &none   &none   &none   &none      &sys_reset   &none        &none        &none        &none        &none
-                       &trans      &trans       &trans        &trans      &trans
+    &none   &none   &bl BL_DEC &bl BL_TOG &bl BL_INC &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+    &none   &none   &none   &none   &none   &none      &none        &none        &none        &none        &none        &none
+    &none   &none   &none   &none   &none   &none      &sys_reset   &none        &none        &none        &none        &none
+                                    &trans      &trans       &trans        &trans      &trans
             >;
         };
     };
