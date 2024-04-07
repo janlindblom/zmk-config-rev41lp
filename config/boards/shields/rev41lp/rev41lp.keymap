@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * Copyright (c) 2024 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -15,6 +15,10 @@
 #define NAVIG   3
 #define FUNCT   4
 #define ADJST   5
+
+#define S_EXCL LS(N1)
+#define S_AT RA(N2)
+#define S_LCBR LS(N8)
 
 / {
     behaviors {
@@ -50,7 +54,7 @@
 // |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp DEL &kp LS(N1)  &kp RA(N2)  &kp LS(N8)  &kp LS(N9)      &kp RA(NUBS)        &kp CARET &kp AMPS  &kp ASTRK   &kp LPAR  &kp RPAR  &kp DEL
+    &kp DEL &kp S_EXCL  &kp S_AT  &kp S_LCBR  &kp LS(N9)      &kp RA(NUBS)        &kp CARET &kp AMPS  &kp ASTRK   &kp LPAR  &kp RPAR  &kp DEL
     &trans  &trans   &trans   &trans   &trans   &trans         &kp TILDE &kp UNDER &kp KP_PLUS &kp LBRC  &kp RBRC  &kp PIPE
     &trans  &trans   &kp LGUI &trans   &trans   &kp CLCK       &kp PSCRN &trans    &trans      &trans    &trans    &trans
                                    &trans    &trans    &kp RET    &mo ADJST    &trans
