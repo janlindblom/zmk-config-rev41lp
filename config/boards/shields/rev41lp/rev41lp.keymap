@@ -58,7 +58,7 @@
 
 / {
     behaviors {
-        td0: tap_dance_0 {
+        sh_cl: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -66,62 +66,70 @@
         };
     };
 
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+	tri {
+	    if-layers = <LOWER RAISE>;
+	    then-layer = <ADJST>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-// --------------------------------------------------------------------------------------
-// |  ESC |  Q   |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P  |  Å  |
-// | CTRL |  A   |  S   |  D   |  F   |  G  |   |  H  |  J   |  K   |  L   |  Ö  |  Ä  |
-// | SHFT |CTL(Z)|ALT(X)|SFT(C)|CTL(V)|  B  |   |  N  |CTL(M)|SFT(,)|ALT(.)|  -  |  '  |
-//                         | LGUI | LWR |  SPACE  | RSE | FUNC |
+// ------------------------------------------------------------------------------
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |  Å  |
+// | BSPS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  |  '  |
+//                          | DEL | LWR |SPC| RSE | TAB |
             bindings = <
     &lt RAISE ESC   &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I       &kp O   &kp P      &kp S_ARNG
     &mt LCTRL BSPC  &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K       &kp L   &kp S_ODIA &mt RCTRL S_ADIA
-    &td0            &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp COMMA   &kp DOT &kp S_MINS &mt RSHIFT S_QUOT
+    &sh_cl          &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp COMMA   &kp DOT &kp S_MINS &mt RSHIFT S_QUOT
                     &mt LALT DEL    &lt LOWER RET   &mt LGUI SPACE  &lt RAISE RET   &mt RALT TAB
             >;
         };
 
         lower_layer {
 // -----------------------------------------------------------------------------
-// | DEL |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
-// |     |     |     |     |     |     |   |  ~  |  _  |  +  |  {  |  }  | "|" |
-// |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
-//                       |     |     | RET | ADJ |     |
+// |     |  !  |  @  |  {  |  }  |  |  |   |  £  |  €  |  ?  |  §  |  ¤  |  ¨  |
+// |     |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |  "  |
+// |     |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  <  |  >  |  \  |  ´  |
+//                         |     |     |   | ADJ |     |
             bindings = <
     &trans  &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE      &kp S_PND   &kp S_EURO  &kp S_QUES  &kp S_SECT  &kp S_CURR  &kp S_DIAE
     &trans  &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV       &kp S_PLUS  &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
     &trans  &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD      &kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp S_ACUT
-                                                &trans    &trans    &trans  &mo ADJST   &trans
+                                                &trans      &trans  &trans  &trans      &trans
             >;
         };
 
         raise_layer {
 // -----------------------------------------------------------------------------
-// | DEL |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-// |     |     |     |     |     |     |   |  `  |  -  |  =  |  [  |  ]  |  \  |
-// |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
-//                       |     | ADJ | BKSP |    |     |
+// |  §   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | MUTE |
+// |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   | LEFT| DOWN|  UP | RGHT| PGUP| VOL+ |
+// |  F7  |  F8 |  F9 | F10 | F11 | F12 |   |WLEFT|WRGHT| HOME| END | PGDN| VOL- |
+//                          |     | ADJ |   |    |     |
             bindings = <
     &kp S_SECT  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp C_MUTE
     &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp PG_UP   &kp C_VOL_UP
     &kp F7      &kp F8  &kp F9  &kp F10 &kp F11 &kp F12     &kp WLEFT   &kp WRIGHT  &kp HOME    &kp END     &kp PG_DN   &kp C_VOL_DN
-                                    &trans  &mo ADJST &trans &trans  &trans
+                                &trans  &trans      &trans  &trans      &trans
             >;
         };
 
         adjust_layer {
 // ------------------------------------------------------------------------------
-// |     |     |     |     |     |     |   | BT1 | BT2 | BT3 | BT4 | BT5 |BT CLR|
+// |     |     |     | BL- | BLT | BL+ |   | BT1 | BT2 | BT3 | BT4 | BT5 |BT CLR|
 // |     |     |     |     |     |     |   |     |     |     |     |     |      |
 // |     |     |     |     |     |     |   |RESET|     |     |     |     |      |
-//                        |     |     |     |     |     |
+//                         |     |     |   |     |     |
             bindings = <
-    &none   &none   &bl BL_DEC &bl BL_TOG &bl BL_INC &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-    &none   &none   &none   &none   &none   &none      &none        &none        &none        &none        &none        &none
-    &none   &none   &none   &none   &none   &none      &sys_reset   &none        &none        &none        &none        &none
-                                    &trans      &trans       &trans        &trans      &trans
+    &none   &none   &none   &bl BL_DEC  &bl BL_TOG  &bl BL_INC      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR
+    &none   &none   &none   &none       &none       &none           &none           &none           &none           &none           &none           &none
+    &none   &none   &none   &none       &none       &none           &sys_reset      &none           &none           &none           &none           &none
+                                            &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
