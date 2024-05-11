@@ -3,324 +3,406 @@
         "LAYOUT": {
             "layout": [
                 {
+                    "row": 0,
+                    "col": 0,
+                    "x": 0.2,
+                    "y": 0.4,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "§\n&ne;\n\nRAISE\n\n\n\n\n\n<i class='mss mss-Unicode-Escape-3'></i>"
+                },
+                {
+                    "row": 0,
+                    "col": 1,
+                    "x": 1.2,
+                    "y": 0.30000000000000004,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "1\n!\n\n\n\n\n\n\n\nQ"
+                },
+                {
+                    "row": 0,
+                    "col": 2,
+                    "x": 2.2,
+                    "y": 0.19999999999999996,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "2\n@\n\n\n\n\n\n\n\nW"
+                },
+                {
+                    "row": 0,
+                    "col": 3,
+                    "x": 3.2,
+                    "y": 0.09999999999999964,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "3\n{\n\n\n\n\n\n\n\nE"
+                },
+                {
+                    "row": 0,
+                    "col": 4,
+                    "x": 4.2,
+                    "y": 0.19999999999999996,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "4\n}\n<i class='kb kb-Unicode-Screen-Dim'></i>\n\n\n\n\n\n\nR"
+                },
+                {
+                    "row": 0,
+                    "col": 5,
+                    "x": 5.2,
+                    "y": 0.30000000000000004,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "5\n|\n\n\n\n\n\n\n\nT"
+                },
+                {
+                    "row": 1,
+                    "col": 0,
+                    "x": 6.7,
+                    "y": 1.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "6\n£\n\n\n\n\n\n\n\nY"
+                },
+                {
+                    "row": 1,
+                    "col": 1,
+                    "x": 7.7,
+                    "y": 1.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "7\n€\n<i class='kb kb-Unicode-Screen-Bright'></i>\n\n\n\n\n\n\nU"
+                },
+                {
+                    "row": 1,
+                    "col": 2,
+                    "x": 8.7,
+                    "y": 1.6,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "8\n?\n\n\n\n\n\n\n\nI"
+                },
+                {
+                    "row": 1,
+                    "col": 3,
+                    "x": 9.7,
+                    "y": 1.7,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "9\n§\n\n\n\n\n\n\n\nO"
+                },
+                {
+                    "row": 1,
+                    "col": 4,
+                    "x": 10.7,
+                    "y": 1.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "0\n¤\n\n\n\n\n\n\n\nP"
+                },
+                {
+                    "row": 1,
+                    "col": 5,
+                    "x": 11.7,
+                    "y": 1.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Multimedia-Play-Pause'></i>\n¨\n\n\n\n\n\n\n\nÅ"
+                },
+                {
+                    "row": 2,
+                    "col": 0,
+                    "x": 0.2,
+                    "y": 1.4,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F1\n&le;\n\n<i class='kb kb-Unicode-Control-1'></i>\n\n\n\n\n\n⌫"
+                },
+                {
+                    "row": 2,
+                    "col": 1,
+                    "x": 1.2,
+                    "y": 1.3,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F2\n#\n\n\n\n\n\n\n\nA"
+                },
+                {
+                    "row": 2,
+                    "col": 2,
+                    "x": 2.2,
+                    "y": 1.2,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F3\n$\n\n\n\n\n\n\n\nS"
+                },
+                {
+                    "row": 2,
+                    "col": 3,
+                    "x": 3.2,
+                    "y": 1.1,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F4\n(\n\n\n\n\n\n\n\nD"
+                },
+                {
+                    "row": 2,
+                    "col": 4,
+                    "x": 4.2,
+                    "y": 1.2,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F5\n)\n\n\n\n\n\n\n\nF"
+                },
+                {
+                    "row": 2,
+                    "col": 5,
+                    "x": 5.2,
+                    "y": 1.3,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F6\n`\n\n\n\n\n\n\n\nG"
+                },
+                {
+                    "row": 3,
+                    "col": 0,
+                    "x": 6.7,
+                    "y": 2.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Left'></i>\n+\n\n\n\n\n\n\n\nH"
+                },
+                {
+                    "row": 3,
+                    "col": 1,
+                    "x": 7.7,
+                    "y": 2.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Down'></i>\n-\n\n\n\n\n\n\n\nJ"
+                },
+                {
+                    "row": 3,
+                    "col": 2,
+                    "x": 8.7,
+                    "y": 2.6,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Up'></i>\n/\n\n\n\n\n\n\n\nK"
+                },
+                {
+                    "row": 3,
+                    "col": 3,
+                    "x": 9.7,
+                    "y": 2.7,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Right'></i>\n*\n\n\n\n\n\n\n\nL"
+                },
+                {
+                    "row": 3,
+                    "col": 4,
+                    "x": 10.7,
+                    "y": 2.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='mss mss-Unicode-Page-Up-5'></i>\n%\n\n\n\n\n\n\n\nÖ"
+                },
+                {
+                    "row": 3,
+                    "col": 5,
+                    "x": 11.7,
+                    "y": 2.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Multimedia-Volume-Up-1'></i>\n\"\n\n\n\n\n\n\n\nÄ"
+                },
+                {
+                    "row": 4,
+                    "col": 0,
+                    "x": 0.2,
+                    "y": 2.4,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F7\n&ge;\n⇪\n\n\n\n\n\n\n⇧"
+                },
+                {
+                    "row": 4,
+                    "col": 1,
+                    "x": 1.2,
+                    "y": 2.3,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F8\n%\n\n\n\n\n\n\n\nZ"
+                },
+                {
+                    "row": 4,
+                    "col": 2,
+                    "x": 2.2,
+                    "y": 2.2,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F9\n^\n\n\n\n\n\n\n\nX"
+                },
+                {
+                    "row": 4,
+                    "col": 3,
+                    "x": 3.2,
+                    "y": 2.1,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F10\n[\n\n\n\n\n\n\n\nC"
+                },
+                {
+                    "row": 4,
+                    "col": 4,
+                    "x": 4.2,
+                    "y": 2.2,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F11\n]\n\n\n\n\n\n\n\nV"
+                },
+                {
+                    "row": 4,
+                    "col": 5,
+                    "x": 5.2,
+                    "y": 2.3,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "F12\n´\n\n\n\n\n\n\n\nB"
+                },
+                {
+                    "row": 5,
+                    "col": 0,
+                    "x": 6.7,
+                    "y": 3.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Left-Circle-Filled'></i>\n&\n<i class='kb kb-Unicode-Break-2'></i>\n\n\n\n\n\n\nN"
+                },
+                {
+                    "row": 5,
+                    "col": 1,
+                    "x": 7.7,
+                    "y": 3.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Arrows-Right-Circle-Filled'></i>\n=\n\n\n\n\n\n\n\nM"
+                },
+                {
+                    "row": 5,
+                    "col": 2,
+                    "x": 8.7,
+                    "y": 3.6,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Line-Start'></i>\n;\n\n\n\n\n\n\n;\n,"
+                },
+                {
+                    "row": 5,
+                    "col": 3,
+                    "x": 9.7,
+                    "y": 3.7,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Line-End'></i>\n:\n\n\n\n\n\n\n:\n."
+                },
+                {
+                    "row": 5,
+                    "col": 4,
+                    "x": 10.7,
+                    "y": 3.8,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Unicode-Page-Down-3'></i>\n\\\n\n\n\n\n\n\n_\n-"
+                },
+                {
+                    "row": 5,
+                    "col": 5,
+                    "x": 11.7,
+                    "y": 3.9,
+                    "r": -7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "<i class='kb kb-Multimedia-Volume-Down-1'></i>\n~\n\n⇧\n\n\n\n\n*\n'"
+                },
+                {
+                    "row": 6,
+                    "col": 0,
                     "x": 3.3,
                     "y": 3.8,
                     "label": "\n\n\nLOWER\n\n\n\n\n\n⌦"
                 },
                 {
-                    "x": 8.7,
-                    "y": 3.8,
-                    "label": "\n\n\nAltGr\n\n\n\n\n\n<i class='kb kb-Tab-1'></i>"
+                    "row": 6,
+                    "col": 1,
+                    "x": 4.9,
+                    "y": 3.3,
+                    "r": 7,
+                    "rx": 0,
+                    "ry": 0,
+                    "label": "\n\n\n<i class='kb kb-Unicode-Alternate-1'></i>\n\n\n\n\n\n<i class='kb kb-Return-2'></i>"
                 },
                 {
+                    "row": 6,
+                    "col": 2,
                     "x": 5.5,
                     "y": 4,
                     "label": "\n\n\n<i class='kb kb-logo-windows-8'></i>\n\n\n\n\n\n␣",
                     "u": 2
                 },
                 {
-                    "x": 3.2,
-                    "y": 0.09999999999999964,
-                    "label": "3\n{\n\n\n\n\n\n\n\nE",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 2.2,
-                    "y": 0.19999999999999996,
-                    "label": "2\n@\n\n\n\n\n\n\n\nW",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 4.2,
-                    "y": 0.19999999999999996,
-                    "label": "4\n}\n<i class='kb kb-Unicode-Screen-Dim'></i>\n\n\n\n\n\n\nR",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 1.2,
-                    "y": 0.30000000000000004,
-                    "label": "1\n!\n\n\n\n\n\n\n\nQ",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 5.2,
-                    "y": 0.30000000000000004,
-                    "label": "5\n|\n\n\n\n\n\n\n\nT",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 0.2,
-                    "y": 0.4,
-                    "label": "§\n&ne;\n\nRAISE\n\n\n\n\n\n<i class='mss mss-Unicode-Escape-3'></i>",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 3.2,
-                    "y": 1.1,
-                    "label": "F4\n(\n\n\n\n\n\n\n\nD",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 2.2,
-                    "y": 1.2,
-                    "label": "F3\n$\n\n\n\n\n\n\n\nS",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 4.2,
-                    "y": 1.2,
-                    "label": "F5\n)\n\n\n\n\n\n\n\nF",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 1.2,
-                    "y": 1.3,
-                    "label": "F2\n#\n\n\n\n\n\n\n\nA",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 5.2,
-                    "y": 1.3,
-                    "label": "F6\n`\n\n\n\n\n\n\n\nG",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 0.2,
-                    "y": 1.4,
-                    "label": "F1\n&le;\n\n<i class='kb kb-Unicode-Control-1'></i>\n\n\n\n\n\n⌫",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 3.2,
-                    "y": 2.1,
-                    "label": "F10\n[\n\n\n\n\n\n\n\nC",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 2.2,
-                    "y": 2.2,
-                    "label": "F9\n^\n\n\n\n\n\n\n\nX",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 4.2,
-                    "y": 2.2,
-                    "label": "F11\n]\n\n\n\n\n\n\n\nV",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 1.2,
-                    "y": 2.3,
-                    "label": "F8\n%\n\n\n\n\n\n\n\nZ",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 5.2,
-                    "y": 2.3,
-                    "label": "F12\n´\n\n\n\n\n\n\n\nB",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 0.2,
-                    "y": 2.4,
-                    "label": "F7\n&ge;\n⇪\n\n\n\n\n\n\n⇧",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 4.9,
-                    "y": 3.3,
-                    "label": "\n\n\n<i class='kb kb-Unicode-Alternate-1'></i>\n\n\n\n\n\n<i class='kb kb-Return-2'></i>",
-                    "r": 7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 8.7,
-                    "y": 1.6,
-                    "label": "8\n?\n\n\n\n\n\n\n\nI",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 9.7,
-                    "y": 1.7,
-                    "label": "9\n§\n\n\n\n\n\n\n\nO",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 7.7,
-                    "y": 1.8,
-                    "label": "7\n€\n<i class='kb kb-Unicode-Screen-Bright'></i>\n\n\n\n\n\n\nU",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 10.7,
-                    "y": 1.8,
-                    "label": "0\n¤\n\n\n\n\n\n\n\nP",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 6.7,
-                    "y": 1.9,
-                    "label": "6\n£\n\n\n\n\n\n\n\nY",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 11.7,
-                    "y": 1.9,
-                    "label": "<i class='kb kb-Multimedia-Play-Pause'></i>\n¨\n\n\n\n\n\n\n\nÅ",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 8.7,
-                    "y": 2.6,
-                    "label": "<i class='kb kb-Arrows-Up'></i>\n/\n\n\n\n\n\n\n\nK",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 9.7,
-                    "y": 2.7,
-                    "label": "<i class='kb kb-Arrows-Right'></i>\n*\n\n\n\n\n\n\n\nL",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 7.7,
-                    "y": 2.8,
-                    "label": "<i class='kb kb-Arrows-Down'></i>\n-\n\n\n\n\n\n\n\nJ",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 10.7,
-                    "y": 2.8,
-                    "label": "<i class='mss mss-Unicode-Page-Up-5'></i>\n%\n\n\n\n\n\n\n\nÖ",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 6.7,
-                    "y": 2.9,
-                    "label": "<i class='kb kb-Arrows-Left'></i>\n+\n\n\n\n\n\n\n\nH",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 11.7,
-                    "y": 2.9,
-                    "label": "<i class='kb kb-Multimedia-Volume-Up-1'></i>\n\"\n\n\n\n\n\n\n\nÄ",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 8.7,
-                    "y": 3.6,
-                    "label": "<i class='kb kb-Line-Start'></i>\n;\n\n\n\n\n\n\n;\n,",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 9.7,
-                    "y": 3.7,
-                    "label": "<i class='kb kb-Line-End'></i>\n:\n\n\n\n\n\n\n:\n.",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 7.7,
-                    "y": 3.8,
-                    "label": "<i class='kb kb-Arrows-Right-Circle-Filled'></i>\n=\n\n\n\n\n\n\n\nM",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 10.7,
-                    "y": 3.8,
-                    "label": "<i class='kb kb-Unicode-Page-Down-3'></i>\n\\\n\n\n\n\n\n\n_\n-",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 6.7,
-                    "y": 3.9,
-                    "label": "<i class='kb kb-Arrows-Left-Circle-Filled'></i>\n&\n<i class='kb kb-Unicode-Break-2'></i>\n\n\n\n\n\n\nN",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
-                    "x": 11.7,
-                    "y": 3.9,
-                    "label": "<i class='kb kb-Multimedia-Volume-Down-1'></i>\n~\n\n⇧\n\n\n\n\n*\n'",
-                    "r": -7,
-                    "rx": 0,
-                    "ry": 0
-                },
-                {
+                    "row": 6,
+                    "col": 3,
                     "x": 7,
                     "y": 4.9,
-                    "label": "\n\n\nRAISE\n\n\n\n\n\n<i class='kb kb-Return-2'></i>",
                     "r": -7,
                     "rx": 0,
-                    "ry": 0
+                    "ry": 0,
+                    "label": "\n\n\nRAISE\n\n\n\n\n\n<i class='kb kb-Return-2'></i>"
+                },
+                {
+                    "row": 6,
+                    "col": 4,
+                    "x": 8.7,
+                    "y": 3.8,
+                    "label": "\n\n\nAltGr\n\n\n\n\n\n<i class='kb kb-Tab-1'></i>"
                 }
             ]
         }
