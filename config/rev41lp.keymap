@@ -129,7 +129,7 @@
 &kp RA(N3)   &kp RA(N5)  &kp LS(MINUS)  &kp GRAVE   &kp LS(N4)  &kp RBRC
 &send_geq   &kp LS(N3)  &kp RA(N4)   &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)
 &kp MINUS   &kp FSLH  &kp LS(N7)  &kp LS(NUHS)  &kp LS(N5)  &kp LS(N2)
-&send_leq   &kp S_PERC  &kp LS(RBRC)  &kp RA(N8)  &kp RA(N9)  &kp RA(RBRC)
+&send_leq   &kp LS(N5)  &kp LS(RBRC)  &kp RA(N8)  &kp RA(N9)  &kp RA(RBRC)
 &kp LS(N6)  &kp LS(N0)   &kp NUBS  &kp LS(NUBS)  &kp RA(MINUS)  &kp EQUAL
 &trans      &trans      &trans      &trans      &trans
             >;
