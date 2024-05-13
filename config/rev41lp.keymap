@@ -37,8 +37,8 @@
 #define S_QUES LS(MINUS) // ?
 #define S_GRV  LS(EQUAL) // ` (dead)
 #define S_CIRC LS(RBRC) // ^ (dead)
-#define S_ASTR LS(S_QUOT) // *
-#define S_RABK LS(S_LABK) // >
+#define S_ASTR LS(NUHS) // *
+#define S_RABK LS(NUBS) // >
 #define S_AT   RA(N2)     // @
 #define S_PND  RA(N3)     // £
 #define S_DLR  RA(N4)     // $
@@ -49,7 +49,7 @@
 #define S_RCBR RA(N0)     // }
 #define S_BSLS RA(MINUS) // (backslash)
 #define S_TILD RA(RBRC) // ~ (dead)
-#define S_PIPE RA(S_LABK) // |
+#define S_PIPE RA(NUBS) // |
 #define WLEFT  LC(LEFT)
 #define WRIGHT LC(RIGHT)
 
@@ -109,9 +109,9 @@
 &lt RAISE ESC   &kp Q          &kp W           &kp E          &kp R         &kp T
 &kp Y           &kp U          &kp I           &kp O          &kp P         &kp LBRC
 &mt LCTRL BSPC  &kp A          &kp S           &kp D          &kp F         &kp G
-&kp H           &kp J          &kp K           &kp L          &kp S_ODIA    &mt RCTRL S_ADIA
+&kp H           &kp J          &kp K           &kp L          &kp SEMI    &mt RCTRL SQT
 &sh_cl          &kp Z          &kp X           &kp C          &kp V         &kp B
-&kp N           &kp M          &kp COMMA       &kp DOT        &kp S_MINS    &mt RSHIFT S_QUOT
+&kp N           &kp M          &kp COMMA       &kp DOT        &kp FSLH    &mt RSHIFT NUHS
 &mt LALT DEL    &lt LOWER RET  &mt LGUI SPACE  &lt RAISE RET  &mt RALT TAB
             >;
         };
@@ -124,12 +124,12 @@
             //                         |     |     |   | ADJ |     |
 
             bindings = <
-&send_neq   &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE
+&send_neq   &kp LS(N1)  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE
 &kp S_PND   &kp S_EURO  &kp S_QUES  &kp GRAVE   &kp S_CURR  &kp RBRC
 &send_geq   &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV
-&kp MINUS   &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
+&kp MINUS   &kp FSLH  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
 &send_leq   &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD
-&kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp EQUAL
+&kp S_AMPR  &kp S_EQL   &kp NUBS  &kp S_RABK  &kp S_BSLS  &kp EQUAL
 &trans      &trans      &trans      &trans      &trans
             >;
         };
