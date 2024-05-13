@@ -6,14 +6,4 @@ if SHIELD_REV41LP
 config ZMK_KEYBOARD_NAME
     default "rev41lp"
 
-if ZMK_BACKLIGHT
-
-config PWM
-    default y
-
-config LED_PWM
-    default y
-
-endif # ZMK_BACKLIGHT
-
 endif # SHIELD_REV41LP

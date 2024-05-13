@@ -77,21 +77,21 @@
         send_leq: send_lt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp EQUAL>;
+            bindings = <&macro_tap &kp NUBS &kp LS(N0)>;
             label = "SEND_LT";
         };
 
         send_geq: send_geq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GT &kp EQUAL>;
+            bindings = <&macro_tap &kp LS(N0) &kp LS(N0)>;
             label = "SEND_GEQ";
         };
 
         send_neq: send_neq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EXCL &kp EQUAL>;
+            bindings = <&macro_tap &kp EXCL &kp LS(N0)>;
             label = "SEND_NEQ";
         };
     };
