@@ -66,9 +66,32 @@
     cond_layers {
         compatible = "zmk,conditional-layers";
 
-        tri {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJST>;
+        trilayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+    macros {
+        send_leq: send_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "SEND_LT";
+        };
+
+        send_geq: send_geq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "SEND_GEQ";
+        };
+
+        send_neq: send_neq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL>;
+            label = "SEND_NEQ";
         };
     };
 
@@ -102,9 +125,9 @@
 
             bindings = <
 &trans      &kp S_EXLM  &kp S_AT    &kp S_LCBR  &kp S_RCBR  &kp S_PIPE
-&kp S_PND   &kp S_EURO  &kp S_QUES  &kp GRAVE  &kp S_CURR  &kp RBRC
+&kp S_PND   &kp S_EURO  &kp S_QUES  &kp GRAVE   &kp S_CURR  &kp RBRC
 &trans      &kp S_HASH  &kp S_DLR   &kp S_LPRN  &kp S_RPRN  &kp S_GRV
-&kp MINUS  &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
+&kp MINUS   &kp S_MINS  &kp S_SLSH  &kp S_ASTR  &kp S_PERC  &kp S_DQUO
 &trans      &kp S_PERC  &kp S_CIRC  &kp S_LBRC  &kp S_RBRC  &kp S_TILD
 &kp S_AMPR  &kp S_EQL   &kp S_LABK  &kp S_RABK  &kp S_BSLS  &kp EQUAL
 &trans      &trans      &trans      &trans      &trans
@@ -119,7 +142,7 @@
             //                          |     | ADJ |   |    |     |
 
             bindings = <
-&kp GRAVE    &kp N1         &kp N2    &kp N3     &kp N4     &kp N5
+&kp GRAVE     &kp N1         &kp N2    &kp N3     &kp N4     &kp N5
 &kp N6        &kp N7         &kp N8    &kp N9     &kp N0     &kp C_MUTE
 &kp F1        &kp F2         &kp F3    &kp F4     &kp F5     &kp F6
 &kp LEFT      &kp DOWN       &kp UP    &kp RIGHT  &kp PG_UP  &kp C_VOL_UP
