@@ -18,8 +18,8 @@
 #define S_SECT GRAVE // §
 #define S_PLUS MINUS // +
 #define S_ACUT EQUAL // ´ (dead)
-#define S_ARNG LBRC  // Å
-#define S_DIAE RBRC  // ¨ (dead)
+#define S_ARNG LBKT  // Å
+#define S_DIAE RBKT  // ¨ (dead)
 #define S_ODIA SEMI  // Ö
 #define S_ADIA SQT   // Ä
 #define S_QUOT NUHS  // '
@@ -37,7 +37,7 @@
 #define S_EQL  LS(N0)     // =
 #define S_QUES LS(MINUS) // ?
 #define S_GRV  LS(EQUAL) // ` (dead)
-#define S_CIRC LS(RBRC) // ^ (dead)
+#define S_CIRC LS(RBKT) // ^ (dead)
 #define S_ASTR LS(NUHS) // *
 #define S_RABK LS(NUBS) // >
 #define S_AT   RA(N2)     // @
@@ -49,7 +49,7 @@
 #define S_RBRC RA(N9)     // ]
 #define S_RCBR RA(N0)     // }
 #define S_BSLS RA(MINUS) // (backslash)
-#define S_TILD RA(RBRC) // ~ (dead)
+#define S_TILD RA(RBKT) // ~ (dead)
 #define S_PIPE RA(NUBS) // |
 #define WLEFT  LC(LEFT)
 #define WRIGHT LC(RIGHT)
@@ -143,7 +143,7 @@
 &kp RA(N3)  &kp RA(N5)  &kp LS(MINUS)  &kp GRAVE     &kp LS(N4)     &kp RBKT
 &send_geq   &kp LS(N3)  &kp RA(N4)     &kp LS(N8)    &kp LS(N9)     &kp LS(EQUAL)
 &kp MINUS   &kp FSLH    &kp LS(N7)     &kp LS(NUHS)  &kp LS(N5)     &kp LS(N2)
-&send_leq   &kp LS(N5)  &kp LS(RBRC)   &kp RA(N8)    &kp RA(N9)     &kp RA(RIGHT_BRACKET)
+&send_leq   &kp LS(N5)  &kp LS(RBKT)   &kp RA(N8)    &kp RA(N9)     &kp RA(RBKT)
 &kp LS(N6)  &kp LS(N0)  &kp NUBS       &kp LS(NUBS)  &kp RA(MINUS)  &kp EQUAL
 &trans      &trans      &trans         &trans        &trans
             >;
