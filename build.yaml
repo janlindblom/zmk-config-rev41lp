@@ -2,3 +2,4 @@
 include:
   - board: nice_nano_v2
     shield: rev41lp
+    snippet: studio-rpc-usb-uart
